@@ -5,7 +5,7 @@ from src.main import app
 client = TestClient(app)
 
 
-def test_get_weather_returns_hare() -> None:
+def test_get_weather_returns_sunny_forecast() -> None:
     response = client.get("/weather")
 
     assert response.status_code == 200
